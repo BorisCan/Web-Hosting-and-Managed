@@ -1,0 +1,143 @@
+
+:root{
+    --h1-font: 'Ubuntu', sans-serif;
+    --color: #03045E;
+    --button-bg: #0098FF;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+body{
+    background-color: #F7F8FD;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.header{
+    padding: 10px 0;
+    align-items: center;
+}
+
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo img{
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.logo h1{
+    color: var(--color);
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    align-items: center;
+    margin-right: 50px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--color);
+    font-size: 16px;
+}
+
+
+.navbar .sumbit{
+    cursor: pointer;
+    padding: 10px 35px;
+    background-color: var(--color);
+    color: #fff;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+}
+
+.navbar .sumbit:hover{
+    background-color: var(--button-bg);
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
+
+.main{
+    padding: 20px 0;
+}
+
+.main__text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left{
+    text-align: left;
+}
+
+.left h1{
+    color: var(--color);
+    font-family: var(--h1-font);
+    margin-bottom: 25px;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.left p{
+    color: #03055e7e;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+.left button{
+    padding: 10px 30px;
+    background-color: var(--button-bg);
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+.left button:hover{
+    background-color: var(--color);
+    transition: 0.5s ease;
+}
+
+.right{
+    padding-top: 80px;
+}
+
+.right img{
+    width: 624px;
+    height: 456px;
+    cursor: pointer;
+}
